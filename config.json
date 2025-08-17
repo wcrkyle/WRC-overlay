@@ -1,0 +1,62 @@
+{
+  "branding": {
+    "title": "Waterloo Region Commutes Live",
+    "subtitle": "Traffic \u2022 Transit \u2022 Weather",
+    "accent": "#36a2ff"
+  },
+  "location": {
+    "city": "Kitchener",
+    "region": "Waterloo Region",
+    "lat": 43.4516,
+    "lon": -80.4925,
+    "timezone": "America/Toronto"
+  },
+  "modules": {
+    "clock": true,
+    "weather": true,
+    "traffic": true,
+    "transit": true,
+    "ticker": true,
+    "cameras": false
+  },
+  "weather": {
+    "provider": "mock",
+    "update_seconds": 300
+  },
+  "traffic": {
+    "provider": "mock",
+    "update_seconds": 120,
+    "routes": [
+      {
+        "name": "401 WB: Hespeler \u2192 427",
+        "id": "401_hespeler_427"
+      },
+      {
+        "name": "8 EB: King/Freeport \u2192 401",
+        "id": "8_king_401"
+      },
+      {
+        "name": "401 EB: 8 \u2192 410",
+        "id": "401_8_410"
+      }
+    ]
+  },
+  "transit": {
+    "provider": "mock",
+    "update_seconds": 60,
+    "max_rows": 3
+  },
+  "ticker": {
+    "items": [
+      "Drive safe. Signal like you mean it.",
+      "Heads up: left lane tourists still exist.",
+      "ICYMI: ION trains every ~10 min peak."
+    ],
+    "speed_px_per_sec": 80
+  },
+  "tts": {
+    "enabled": false,
+    "voice_hint": "Male",
+    "every_seconds": 45
+  }
+}
