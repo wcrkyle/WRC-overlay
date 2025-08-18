@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%"><stop offset="0" stop-color="#0e2a42"/><stop offset="1" stop-color="#0b1622"/></radialGradient>
+    <linearGradient id="roads" x1="0" x2="1"><stop offset="0" stop-color="#6ec1ff"/><stop offset="1" stop-color="#36a2ff"/></linearGradient>
+    <style>
+      .city{fill:#eaf2ff;font:700 16px Inter,Arial,sans-serif}.dot{fill:#eaf2ff}.label{fill:#9bb4d0;font:600 13px Inter,Arial,sans-serif}
+      .hw{fill:none;stroke:url(#roads);stroke-width:4;stroke-linecap:round}.minor{stroke-width:2;opacity:.7}.region{fill:none;stroke:#1f3246;stroke-width:2}
+    </style>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg)"/>
+  <path class="region" d="M120,60 520,70 600,160 540,300 180,300 80,220 z"/>
+  <path class="hw" d="M80,260 C180,250 420,260 560,280"/>
+  <path class="hw minor" d="M260,230 C300,220 360,210 420,220"/>
+  <path class="hw minor" d="M520,280 C520,240 520,200 520,160"/>
+  <path class="hw" d="M240,120 C260,160 280,180 300,210"/>
+  <circle class="dot" cx="300" cy="210" r="4"/><text class="city" x="308" y="206">Kitchener</text>
+  <circle class="dot" cx="340" cy="210" r="4"/><text class="city" x="348" y="206">Waterloo</text>
+  <circle class="dot" cx="460" cy="260" r="4"/><text class="city" x="468" y="256">Cambridge</text>
+  <circle class="dot" cx="260" cy="230" r="4"/><text class="city" x="268" y="226">New Hamburg</text>
+  <circle class="dot" cx="240" cy="120" r="4"/><text class="city" x="248" y="116">St. Jacobs</text>
+  <text class="label" x="100" y="250">Hwy 401</text>
+  <text class="label" x="410" y="210">Hwy 8</text>
+  <text class="label" x="525" y="190">Hwy 6</text>
+  <text class="label" x="250" y="150">Hwy 85</text>
+</svg>

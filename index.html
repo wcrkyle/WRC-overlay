@@ -1,65 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WRC Live Overlay</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div id="overlay">
-    <header class="topbar">
-      <div class="brand">
-        <img src="assets/logo.svg" alt="WRC" class="logo">
-        <div class="titles">
-          <div class="title" id="title">Waterloo Region Commutes Live</div>
-          <div class="subtitle" id="subtitle">Traffic • Transit • Weather</div>
-        </div>
-      </div>
-      <div class="meta">
-        <div class="clock" id="clock">--:--</div>
-        <div class="location" id="location">Waterloo Region</div>
-        <div class="weather-pill" id="weather-pill">
-          <span class="w-temp" id="w-temp">--°</span>
-          <span class="w-desc" id="w-desc">Loading...</span>
-        </div>
-      </div>
-    </header>
-
-    <main class="grid">
-      <section class="card weather" id="weather-card">
-        <h2>Weather</h2>
-        <div class="weather-grid">
-          <div class="big-temp"><span id="wt-temp">--</span><sup>°C</sup></div>
-          <div class="wx-right">
-            <div class="wx-row"><span>Feels</span><strong id="wt-feels">--°C</strong></div>
-            <div class="wx-row"><span>Wind</span><strong id="wt-wind">-- km/h</strong></div>
-            <div class="wx-row"><span>Precip</span><strong id="wt-pop">--%</strong></div>
-            <div class="wx-row"><span>UV</span><strong id="wt-uv">--</strong></div>
-          </div>
-          <div class="wx-desc" id="wt-desc">—</div>
-        </div>
-        <div class="wx-forecast" id="wx-forecast"></div>
-      </section>
-
-      <section class="card traffic" id="traffic-card">
-        <h2>Travel Times</h2>
-        <ul class="list" id="travel-list"></ul>
-      </section>
-
-      <section class="card transit" id="transit-card">
-        <h2>Transit Delays</h2>
-        <ul class="list" id="transit-list"></ul>
-      </section>
-    </main>
-
-    <footer class="ticker-wrap" id="ticker-wrap">
-      <div class="ticker" id="ticker"></div>
-    </footer>
-  </div>
-  <script src="main.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WRC Live Overlay</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" /></head><body>
+<div id="overlay">
+<header class="topbar"><div class="brand">
+<img src="assets/logo.svg" alt="WRC" class="logo">
+<div class="titles"><div class="title" id="title">Waterloo Region Commutes Live</div>
+<div class="subtitle" id="subtitle">Traffic • Transit • Weather</div></div></div>
+<div class="meta"><div class="clock" id="clock">--:--</div>
+<div class="location" id="location">Waterloo Region</div>
+<div class="weather-pill" id="weather-pill"><span class="w-temp" id="w-temp">--°</span>
+<span class="w-desc" id="w-desc">Loading...</span></div></div></header>
+<main class="grid">
+<section class="card weather" id="weather-card"><h2>Weather</h2>
+<div class="weather-grid">
+<div class="big-temp"><span id="wt-temp">--</span><sup>°C</sup></div>
+<div class="wx-right">
+<div class="wx-row"><span>Feels</span><strong id="wt-feels">--°C</strong></div>
+<div class="wx-row"><span>Wind</span><strong id="wt-wind">-- km/h</strong></div>
+<div class="wx-row"><span>Precip</span><strong id="wt-pop">--%</strong></div>
+<div class="wx-row"><span>UV</span><strong id="wt-uv">--</strong></div>
+</div>
+<div class="wx-map"><img id="wx-map-img" alt="Waterloo Region Map" /></div>
+<div class="wx-desc" id="wt-desc">—</div></div>
+<div class="wx-forecast" id="wx-forecast"></div></section>
+<section class="card traffic" id="traffic-card"><h2>Travel Times</h2><ul class="list" id="travel-list"></ul></section>
+<section class="card transit" id="transit-card"><h2>Transit Delays</h2><ul class="list" id="transit-list"></ul></section>
+</main>
+<footer class="ticker-wrap" id="ticker-wrap"><div class="ticker" id="ticker"></div></footer></div>
+<script src="main.js"></script></body></html>

@@ -21,36 +21,90 @@
   },
   "weather": {
     "provider": "mock",
-    "update_seconds": 300
+    "update_seconds": 300,
+    "map": {
+      "enabled": true,
+      "image": "assets/wr_map.svg"
+    }
   },
   "traffic": {
     "provider": "mock",
     "update_seconds": 120,
     "routes": [
       {
-        "name": "401 WB: Hespeler \u2192 427",
-        "id": "401_hespeler_427"
+        "name": "401 WB: Hwy 8 \u2192 427",
+        "id": "401_8_to_427_wb"
       },
       {
-        "name": "8 EB: King/Freeport \u2192 401",
-        "id": "8_king_401"
+        "name": "401 EB: 427 \u2192 Hwy 8",
+        "id": "401_427_to_8_eb"
       },
       {
-        "name": "401 EB: 8 \u2192 410",
-        "id": "401_8_410"
+        "name": "401 WB: Hwy 6 \u2192 427",
+        "id": "401_6_to_427_wb"
+      },
+      {
+        "name": "401 EB: 427 \u2192 Hwy 6",
+        "id": "401_427_to_6_eb"
+      },
+      {
+        "name": "401 WB: Hwy 8 \u2192 Hwy 6",
+        "id": "401_8_to_6_wb"
+      },
+      {
+        "name": "401 EB: Hwy 6 \u2192 Hwy 8",
+        "id": "401_6_to_8_eb"
+      },
+      {
+        "name": "85 SB: St. Jacobs \u2192 Hwy 8",
+        "id": "85_stjacobs_to_8_sb"
+      },
+      {
+        "name": "85 SB: St. Jacobs \u2192 8 \u2192 401",
+        "id": "85_stjacobs_to_8_to_401_sb"
+      },
+      {
+        "name": "85 NB: 401 \u2192 8 \u2192 St. Jacobs",
+        "id": "85_401_to_8_to_stjacobs_nb"
+      },
+      {
+        "name": "7/8 EB: New Hamburg \u2192 Hwy 8",
+        "id": "78_newhamburg_to_8_eb"
+      },
+      {
+        "name": "7/8 EB: New Hamburg \u2192 8 \u2192 401",
+        "id": "78_newhamburg_to_8_to_401_eb"
+      },
+      {
+        "name": "7/8 WB: 401 \u2192 8 \u2192 New Hamburg",
+        "id": "78_401_to_8_to_newhamburg_wb"
       }
     ]
   },
   "transit": {
     "provider": "mock",
     "update_seconds": 60,
-    "max_rows": 3
+    "max_rows": 8,
+    "routes": [
+      "ION 301",
+      "ION 302",
+      "1 King",
+      "7 Mainline",
+      "8 Weber/Frederick",
+      "12 Fairway",
+      "13 Laurelwood",
+      "19 Hazel",
+      "201 Fischer-Hallman iXpress",
+      "202 University iXpress",
+      "61 Cambridge Ainslie",
+      "52 Fairview Park"
+    ]
   },
   "ticker": {
     "items": [
-      "Drive safe. Signal like you mean it.",
-      "Heads up: left lane tourists still exist.",
-      "ICYMI: ION trains every ~10 min peak."
+      "Slow on 401 near 427. Pack patience, not rage.",
+      "ION trains ~10 min peak. Tap on, tap off.",
+      "Watch for merges at Hwy 8 ramps."
     ],
     "speed_px_per_sec": 80
   },
